@@ -16,13 +16,29 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-    vendor/samsung/p6810/proprietary/libril.so:obj/lib/libril.so \
-    vendor/samsung/p6810/proprietary/libsecril-client.so:obj/lib/libsecril-client.so
+    vendor/samsung/p6810/proprietary/ril/lib/libril.so:obj/lib/libril.so \
+    vendor/samsung/p6810/proprietary/ril/lib/libsecril-client.so:obj/lib/libsecril-client.so
 
 # RIL
 PRODUCT_COPY_FILES += \
-    vendor/samsung/p6810/proprietary/rild:system/bin/rild \
-    vendor/samsung/p6810/proprietary/libril.so:system/lib/libril.so \
-    vendor/samsung/p6810/proprietary/libsec-ril-apalone.so:system/lib/libsec-ril-apalone.so \
-    vendor/samsung/p6810/proprietary/libsecril-client.so:system/lib/libsecril-client.so
+    vendor/samsung/p6810/proprietary/ril/bin/rild:system/bin/rild \
+    vendor/samsung/p6810/proprietary/ril/lib/libril.so:system/lib/libril.so \
+    vendor/samsung/p6810/proprietary/ril/lib/libsec-ril-apalone.so:system/lib/libsec-ril-apalone.so \
+    vendor/samsung/p6810/proprietary/ril/lib/libsecril-client.so:system/lib/libsecril-client.so
 
+# LPM
+PRODUCT_COPY_FILES += \
+    vendor/samsung/p6810/proprietary/lpm/bin/charging_mode:system/bin/charging_mode \
+    vendor/samsung/p6810/proprietary/lpm/bin/immvibed:system/bin/immvibed \
+    vendor/samsung/p6810/proprietary/lpm/bin/playlpm:system/bin/playlpm \
+    vendor/samsung/p6810/proprietary/lpm/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
+    vendor/samsung/p6810/proprietary/lpm/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
+    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_0.qmg:system/media/battery_charging_0.qmg \
+    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+    vendor/samsung/p6810/proprietary/lpm/media/battery_error.qmg:system/media/battery_error.qmg \
+    vendor/samsung/p6810/proprietary/lpm/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
+    vendor/samsung/p6810/proprietary/lpm/media/Disconnected.qmg:system/media/Disconnected.qmg
