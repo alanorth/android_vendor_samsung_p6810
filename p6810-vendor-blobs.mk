@@ -29,20 +29,3 @@ PRODUCT_COPY_FILES += \
 # SENSORS
 PRODUCT_COPY_FILES += \
     vendor/samsung/p6810/proprietary/sensors/lib/hw/sensors.exynos4.so:system/lib/hw/sensors.exynos4.so
-
-# LPM
-PRODUCT_COPY_FILES += \
-    vendor/samsung/p6810/proprietary/lpm/bin/charging_mode:system/bin/charging_mode \
-    vendor/samsung/p6810/proprietary/lpm/bin/immvibed:system/bin/immvibed \
-    vendor/samsung/p6810/proprietary/lpm/bin/playlpm:system/bin/playlpm \
-    vendor/samsung/p6810/proprietary/lpm/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so \
-    vendor/samsung/p6810/proprietary/lpm/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
-    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_0.qmg:system/media/battery_charging_0.qmg \
-    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
-    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
-    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
-    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
-    vendor/samsung/p6810/proprietary/lpm/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
-    vendor/samsung/p6810/proprietary/lpm/media/battery_error.qmg:system/media/battery_error.qmg \
-    vendor/samsung/p6810/proprietary/lpm/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
-    vendor/samsung/p6810/proprietary/lpm/media/Disconnected.qmg:system/media/Disconnected.qmg
